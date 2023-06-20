@@ -1,0 +1,249 @@
+/*Import fonts from fonts.css file*/
+
+@import url(./font.css);
+
+@import url(./partials/_variables.css);
+
+@import url(./partials/_globale.css);
+
+
+
+.navbar-brand{
+    padding: 0 2rem 0 5rem;
+}
+
+.navbar{
+    padding: 1rem 10rem;
+}
+
+.nav-link{
+    font:normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color:var(--title-color)
+}
+
+.navbar-nav a:hover{
+    background-color: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--primary-color2);
+    background-clip: text;
+
+}
+
+
+.site-title{
+    width: 500px;
+    height: 400px;
+
+    
+}
+
+.site-title h3{
+    
+    font-weight: 500;
+    
+}
+
+
+.site-title h3::after{
+    content: "";
+    height: 2px;
+    width: 18vw;
+    background:black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-title h1{
+    font-size: 4rem;
+}
+.site-title h4{
+    font-size: 1rem;
+}
+
+.banner-image > img{
+    padding: 0 0;
+    width: 50rem;
+    
+  
+}
+
+
+.title-container{
+    width: 400px;
+    height: 400;
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 2%; 
+}
+
+
+.banner-conatiner{
+    width: 256px;
+    height: 170px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5%;
+    
+    
+
+}
+/*About Area*/
+
+.img-fluid{
+    width: 256px;
+    height: 193px;
+}
+
+.about-area{
+    padding: 3rem 5rem;
+}
+
+.about-title h2 > span{
+    display: block;
+    font: normal bold 42px/60px var(--roboto);
+    letter-spacing: 21px;
+}
+
+.paragraph > p {
+    padding: 0rem 0;
+}
+
+.about-image{
+    margin-left: 25%;
+}
+
+/*Brand Area*/
+
+.brand-area{
+    padding: 1rem 20rem;
+    margin-bottom: 4rem;
+}
+
+.first-row .col-lg-4{
+    display: flex;
+    justify-content: center;
+}
+
+.single-brand{
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: 1rem 0rem;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+.single-brand:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+    filter: brightness(0.15);
+}
+
+.experience-area span{
+    display: block;
+}
+.experience-area .years-area{
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 8rem;
+    position: relative;
+}
+.years-area .years{
+    font: normal bold 80px/40px var(--roboto);
+    color: var(--primary-color2);
+    z-index: 2;
+}
+
+.bg-pannel{
+    position: absolute;
+    left: 17%;top: 0%;
+    background-color: #e029290a;
+    width: 350px;height: 400px;
+
+}
+
+.years-area .years h2 > span {
+    font: normal 600 22px/30px var(--roboto);
+}
+
+.brand-area .experience-area .call-area{
+    width:400px ;
+    padding-left: 10rem;
+}
+
+.call-area .call-now a {
+    color: rgb(71, 71, 248);
+    text-decoration: none;
+}
+
+/*Services Area*/
+
+.services-area{
+    padding: 7rem 2rem;
+}
+
+.services-area .services-title{
+    padding: 0 14rem;
+}
+
+.services-area .services-title h1{
+    font-size: 35px;
+}
+
+.services-area .services{
+    background-color: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem ;
+    transition: box-shadow .7s ease;
+}
+.services-area .services:hover{
+    box-shadow: var(--box-shadow);
+}
+
+/*Projects Area*/
+.project-area{
+    padding: 4rem 0;
+}
+
+.project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--roboto);
+    text-transform: uppercase;
+}
+
+.project-area .button-group button + button{
+    padding-left: 3rem;
+}
+
+.project-area .grid-row{
+    display: grid;
+    grid-template-columns:auto auto auto  ;
+    grid-gap: 10px;
+    
+}
+
+.our-project .title{
+    width: 200px;
+}
+
+.our-project .title h4{
+    font: normal 700 22px/12px var(--roboto);
+}
+
+.popular,
+.latest{
+    position: relative;
+}

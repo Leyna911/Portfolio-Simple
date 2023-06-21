@@ -231,7 +231,7 @@
 .project-area .grid-row{
     display: grid;
     grid-template-columns:auto auto auto  ;
-    grid-gap: 10px;
+    grid-gap: 0px;
     
 }
 
@@ -246,4 +246,12 @@
 .popular,
 .latest{
     position: relative;
+}
+
+.project-area .img-wrap img{
+    float: left;
+    width:  350px;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 18px;
 }

@@ -13,7 +13,7 @@
 }
 
 .navbar{
-    padding: 1rem 10rem;
+    padding: 2rem 5rem;
 }
 
 .nav-link{
@@ -63,6 +63,11 @@
     font-size: 1rem;
 }
 
+
+.site-main  .site-banner{
+    background: url(../img/client/home-banner.png) no-repeat ;
+    background-size: cover;
+}
 .banner-image > img{
     padding: 0 0;
     width: 50rem;
@@ -85,8 +90,8 @@
 
 
 .banner-conatiner{
-    width: 256px;
-    height: 170px;
+    width: 400px;
+    height: 400px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -98,8 +103,9 @@
 /*About Area*/
 
 .img-fluid{
-    width: 256px;
-    height: 193px;
+    height: 400px;
+    object-fit: cover;
+
 }
 
 .about-area{
@@ -117,9 +123,12 @@
 }
 
 .about-image{
-    margin-left: 25%;
+    margin-left: 20%;
 }
 
+.paragraph{
+    margin-left: 0;
+}
 /*Brand Area*/
 
 .brand-area{
@@ -254,4 +263,105 @@
     height: 350px;
     object-fit: cover;
     margin-bottom: 18px;
+}
+
+.project-area .grid-row .our-project .img-wrap a:hover img{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+/*About me*/
+
+.site-main .about-area .about-title p{
+    padding: 1rem 7rem;
+}
+
+.about-area .client{
+    background: #ffffff;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+}
+
+.client .client-img{
+    padding: 1rem;
+}
+
+.client .about-client{
+    padding-top: 2rem;
+}
+.client .about-client h4{
+    font: normal 500 21px/20px var(--roboto);
+}
+
+.about-area .client .about-client p{
+    font-size: 14px;
+}
+
+.about-area .owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.owl-carousel .owl-dots .owl-dot.active span{
+    background: var(--gradient-color);
+    width: 12px;
+    height: 12px;
+    
+}
+
+/*Subscribe Me*/
+
+.site-main .subscribe-us-area .subscribe{
+    background: url(../img/client/subscribe-bg.png) no-repeat;
+    padding: 10rem 0;
+    margin: 3rem auto;
+}
+
+.subscribe .subscribe-title h4{
+    font: normal 700 30px/30px var(--roboto);
+    color: whitesmoke;
+}
+
+.subscribe-title p{
+    color: whitesmoke;
+    padding: 1rem 4rem;
+}
+
+.subscribe-us-area .subscribe form .input-textbox input{
+    width: 400px;
+    padding: 1rem 1rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: black;
+    font: normal 500 17px/20px var(--roboto);
+}
+
+.subscribe-us-area .subscribe form .input-textbox input::placeholder{
+    color: whitesmoke;
+}
+
+.subscribe-us-area .subscribe form .btn-submit button {
+    background: whitesmoke;
+    color: black;
+    padding: .7rem 2rem ;
+}
+
+/*Footer Area*/
+footer.footer-area{
+    padding: 5rem 0;
+    background: url(../img/client/footer-bg\ \(1\).png) no-repeat;
+}
+
+footer.footer-area .social h5{
+    font: normal 500 23px/30px var(--roboto);
+}
+
+footer.footer-area .social a > i {
+    font-size: 22px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+footer.footer-area .social a:hover >i {
+    color: var(--gradient-color);
 }
